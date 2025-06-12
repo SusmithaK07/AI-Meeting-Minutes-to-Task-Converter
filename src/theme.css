@@ -1,0 +1,156 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* New theme colors - Soft Violet & Teal */
+  --background: 260 30% 98%;
+  --foreground: 260 20% 20%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 260 20% 20%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 260 20% 20%;
+
+  --primary: 185 85% 45%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 265 85% 65%;
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 260 20% 94%;
+  --muted-foreground: 260 10% 50%;
+
+  --accent: 320 80% 65%;
+  --accent-foreground: 320 100% 97%;
+
+  --destructive: 0 80% 65%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 260 20% 90%;
+  --input: 260 20% 90%;
+  --ring: 180 80% 45%;
+
+  --radius: 1rem;
+
+  --sidebar-background: 260 30% 98%;
+  --sidebar-foreground: 260 20% 20%;
+  --sidebar-primary: 180 80% 45%;
+  --sidebar-primary-foreground: 180 100% 97%;
+  --sidebar-accent: 260 30% 94%;
+  --sidebar-accent-foreground: 260 20% 20%;
+  --sidebar-border: 260 20% 90%;
+  --sidebar-ring: 180 80% 45%;
+}
+
+.dark {
+  /* Dark mode with deep purple and teal accents */
+  --background: 260 20% 10%;
+  --foreground: 260 10% 90%;
+
+  --card: 260 20% 15%;
+  --card-foreground: 260 10% 90%;
+
+  --popover: 260 25% 8%;
+  --popover-foreground: 260 10% 90%;
+
+  --primary: 180 70% 40%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 260 50% 50%;
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 260 20% 20%;
+  --muted-foreground: 260 10% 70%;
+
+  --accent: 320 70% 50%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 260 20% 25%;
+  --input: 260 20% 25%;
+  --ring: 180 70% 40%;
+}
+
+/* Apply font family to body */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, hsl(var(--background)), hsl(calc(var(--background) + 10deg) / 0.9));
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.8);
+}
+
+/* Custom card styles */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(var(--secondary) / 0.15), 
+              0 8px 10px -6px rgba(var(--secondary) / 0.1);
+}
+
+/* Emoji styles */
+.emoji {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+/* Custom button styles */
+.btn-gradient-primary {
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(calc(var(--primary) - 20deg)));
+  color: hsl(0, 0%, 100%);
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+  font-weight: 700;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.02em;
+}
+
+.btn-gradient-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(var(--primary) / 0.3);
+}
+
+.btn-gradient-secondary {
+  background: linear-gradient(135deg, hsl(var(--secondary)), hsl(calc(var(--secondary) - 20deg)));
+  color: hsl(0, 0%, 100%);
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+  font-weight: 700;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.02em;
+}
+
+.btn-gradient-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(var(--secondary) / 0.3);
+} 
