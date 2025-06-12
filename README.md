@@ -37,7 +37,7 @@ TaskMaster Pro transforms the way you manage tasks and meeting minutes. Powered 
 
 | Task Creation (NLP) | Meeting Minutes Parser | Task Dashboard |
 |:-------------------:|:---------------------:|:--------------:|
-| ![](./screenshots/task1.png) | ![](./screenshots/task2.png) | *(Add dashboard screenshot)* |
+| ![](./screenshots/task1.png) | ![](./screenshots/task2.png) | ![](./screenshots/task3.jpg) |
 
 ---
 
