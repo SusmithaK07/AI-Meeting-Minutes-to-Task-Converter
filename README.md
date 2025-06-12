@@ -1,66 +1,56 @@
-# TaskMaster Pro - Intelligent Task Management System ⚡
+# TaskMaster Pro ⚡
 
-## Overview 🌟
+> **The Intelligent Task Management System for Modern Teams**
 
-TaskMaster Pro is a modern task management application that uses natural language processing to intelligently parse and organize your tasks. Simply type your task in plain English, and TaskMaster Pro will automatically extract key information like due dates, assignees, and priority levels.
+TaskMaster Pro transforms the way you manage tasks and meeting minutes. Powered by advanced Natural Language Processing (NLP) and optional AI integration, it turns your everyday language into actionable, organized tasks—so you can focus on what matters.
 
-## Screenshots 📸
+---
 
-### Intelligent Task Creation with Natural Language Processing
+## 📑 Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Quick Start](#quick-start)
+- [AI & NLP Configuration](#ai--nlp-configuration)
+- [Usage](#usage)
+- [Tech Stack](#tech-stack)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
 
-TaskMaster Pro allows you to create tasks effortlessly by typing in plain English. For example, inputting "Call client Rajeev tomorrow 5pm" will automatically parse the task title, identify the due date and time, and even suggest a priority if not explicitly mentioned.
+---
 
-![Task Creation](./screenshots/task1.png)
+## ✨ Features
+- **📝 Natural Language Task Entry**: Add tasks in plain English (e.g., "Email Sarah by Friday 3pm, high priority").
+- **🤖 AI-Powered Parsing**: Extracts title, assignee, due date, and priority using OpenAI GPT (optional).
+- **🗒️ Meeting Minutes to Tasks**: Paste meeting notes and auto-extract multiple actionable tasks.
+- **🧠 Local NLP Fallback**: Works offline with built-in NLP if no API key is provided.
+- **📅 Smart Date Handling**: Intelligently sets future dates, even without a year.
+- **🔎 Powerful Filtering & Sorting**: Filter by assignee, priority, status, or search terms. Sort by due date, priority, or assignee.
+- **🖱️ Intuitive Editing**: Edit all task properties in a modern modal interface.
+- **📱 Responsive Design**: Beautiful on desktop and mobile.
+- **💾 Local Storage**: All tasks saved securely in your browser.
+- **🎨 Modern UI**: Clean, animated, and easy to use.
 
-### Meeting Minutes Parser for Multiple Tasks
+---
 
-Efficiently convert your meeting notes or conversation transcripts into actionable tasks. Paste your text, and TaskMaster Pro's parser will extract multiple tasks, assignees, due dates, and priorities, ready to be added to your board.
+## 📸 Screenshots
 
-![Meeting Minutes Parser](./screenshots/task2.png)
+| Task Creation (NLP) | Meeting Minutes Parser | Task Dashboard |
+|:-------------------:|:---------------------:|:--------------:|
+| ![](./screenshots/task1.png) | ![](./screenshots/task2.png) | *(Add dashboard screenshot)* |
 
-### Task Dashboard for Easy Management
+---
 
-Get a clear overview of all your tasks on the dashboard. Tasks are neatly organized by status (Pending, In Progress, Completed), and you can quickly see key details like assignee, due date, and priority. Filters and search functionality help you find specific tasks with ease.
-
-
-## Features ✨
-
-- **Natural Language Processing**: Enter tasks in plain English (e.g., "Finish the report for Sarah by next Friday at 3pm with high priority").
-- **AI-Powered Task Parsing**: Uses OpenAI's GPT model to intelligently extract task details.
-- **Meeting Minutes to Task Converter**: Extract multiple tasks from meeting transcripts or conversation text.
-- **Local NLP Fallback**: Built-in NLP parser works even without an API key.
-- **Smart Date Handling**: Automatically sets dates to the future when no year is specified.
-- **Priority Management**: Automatically assigns and color-codes priority levels (P1-P4).
-- **Task Filtering**: Filter tasks by assignee, priority, status, or search terms.
-- **Task Sorting**: Sort by due date, priority, or assignee.
-- **Comprehensive Task Editing**: Edit all task properties with an intuitive modal interface.
-- **Responsive Design**: Works beautifully on both desktop and mobile devices.
-- **Local Storage**: Tasks are saved in your browser's local storage.
-- **Modern UI**: Clean design with smooth animations and transitions.
-
-## Technology Stack 💻
-
-- **Frontend**: React with TypeScript
-- **Styling**: TailwindCSS for responsive design
-- **State Management**: React Hooks and Context API
-- **AI Integration**: OpenAI API (optional)
-- **Routing**: React Router
-- **Build Tool**: Vite
-
-## Getting Started 🚀
+## 🚀 Quick Start
 
 ### Prerequisites
-
-- Node.js (v16 or higher)
+- Node.js v16+
 - npm or yarn
 
 ### Installation
-
 ```bash
 # Clone the repository
 git clone https://github.com/SusmithaK07/AI-Meeting-Minutes-to-Task-Converter.git
-
-# Navigate to the project directory
 cd Natural-Language-Task-Manager
 
 # Install dependencies
@@ -70,60 +60,75 @@ npm install
 npm run dev
 ```
 
-### OpenAI API Configuration (Optional) 🔑
-
-TaskMaster Pro can use OpenAI's GPT model for enhanced natural language processing. To enable this feature:
-
-1. Create a `.env` file in the project root
-2. Add your OpenAI API key: `VITE_OPENAI_API_KEY=your_api_key_here`
-
-If no API key is provided, TaskMaster Pro will automatically fall back to its built-in NLP parser.
-
-## Usage 🛠️
-
-### Single Task Entry
-1. Click the "Add Task" button to create a new task
-2. Type your task in natural language (e.g., "Call John about the project proposal tomorrow at 2pm")
-3. Toggle the "Use AI" switch if you want to use OpenAI for parsing (requires API key)
-4. TaskMaster Pro will automatically extract the title, assignee, due date, and priority
-5. Press Ctrl+Enter or click Submit to add the task
-
-### Meeting Minutes Parser
-1. Click the "Meeting Minutes" button to open the meeting minutes parser
-2. Paste your meeting transcript or conversation text into the textarea
-3. Click "Parse Meeting Minutes" to extract tasks
-4. Review and edit the extracted tasks as needed
-5. Click "Add All Tasks" to add them to your task board
-
-## Key Components 🧩
-
-- **TaskInput**: Handles natural language input and parsing for single tasks
-- **MeetingMinutesParser**: Extracts multiple tasks from meeting transcripts
-- **TaskList**: Displays and manages tasks
-- **TaskCard**: Displays individual tasks with editing capabilities
-- **TaskEditModal**: Provides comprehensive task editing interface
-- **TaskFilters**: Provides filtering and sorting options
-- **NLP Parser**: Local natural language processing
-- **Meeting Minutes Parser**: Extracts tasks from conversational text
-- **OpenAI Service**: Integration with OpenAI API for enhanced parsing
-
-## Acknowledgments 🙏
-
-- [OpenAI](https://openai.com/) for their powerful language models
-- [React](https://reactjs.org/) and [Vite](https://vitejs.dev/) for the frontend framework
-- [TailwindCSS](https://tailwindcss.com/) for the styling
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
+## 🔑 AI & NLP Configuration
 
-## What technologies are used for this project? 💡
+TaskMaster Pro can use OpenAI's GPT model for enhanced parsing. To enable:
 
-This project is built with:
+1. Create a `.env` file in the project root.
+2. Add your API key:
+   ```env
+   VITE_OPENAI_API_KEY=your_api_key_here
+   ```
+3. Toggle the "Use AI" switch in the app UI.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+> **No API key?** No problem! The app automatically uses its built-in NLP parser for offline/local use.
+
+---
+
+## 🛠️ Usage
+
+### Add a Single Task
+1. Click **Add Task**
+2. Type: `Call John about the project proposal tomorrow at 2pm`
+3. (Optional) Toggle **Use AI** for GPT parsing
+4. Submit (Ctrl+Enter or click Submit)
+
+### Parse Meeting Minutes
+1. Click **Meeting Minutes**
+2. Paste your transcript or notes
+3. Click **Parse Meeting Minutes**
+4. Review, edit, and **Add All Tasks**
+
+---
+
+## 💡 Tech Stack
+- **Frontend**: React (TypeScript)
+- **Styling**: Tailwind CSS, shadcn-ui
+- **State**: React Hooks, Context API
+- **AI**: OpenAI API (optional)
+- **Routing**: React Router
+- **Build**: Vite
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! To get started:
+1. Fork the repo
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes
+4. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+## 💬 Support & Feedback
+
+- Found a bug? [Open an issue](https://github.com/SusmithaK07/AI-Meeting-Minutes-to-Task-Converter/issues)
+- Have a feature request? [Start a discussion](https://github.com/SusmithaK07/AI-Meeting-Minutes-to-Task-Converter/discussions)
+- Questions? Contact the maintainer via GitHub
+
+---
+
+> **TaskMaster Pro** — Your intelligent assistant for effortless, organized productivity.
 
 
